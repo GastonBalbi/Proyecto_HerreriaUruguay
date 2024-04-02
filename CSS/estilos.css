@@ -1,0 +1,376 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+
+/* Ya que el header y el footer estan en todos los archivos html, los coloque arriba, 
+y luego le di estilos a cada archivo html por separado*/
+
+
+/*-------------------------------------------- HEADER --------------------------------------------*/
+
+
+.titulo{
+    background-image:linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(../Imagenes/index/herreria_.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 90px;   
+} 
+
+h1{
+    font-size: 90px;
+    text-align: center;
+    color: white;
+}
+
+.barra_navegacion{ 
+    display: flex;
+    justify-content: center;
+    background-color: black;      
+    margin: auto;
+}
+
+li{ 
+    display: inline-block;
+    margin: 15px;
+    margin-right: 40px;
+    border: 0.4px black solid;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;        
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*-------------------------------------------- FOOTER --------------------------------------------*/
+
+
+.footer{   
+    display: flex;
+    justify-content: space-evenly; 
+    background-color: black; 
+}
+
+.titulo_footer{
+    display: flex;
+    align-items: center;
+}
+
+.titulo_footer > h2{
+    font-size: 25px;
+    color: grey;
+}
+
+.linea{
+    margin-top: 20px;
+    height: 150px;
+    border-left: 1px solid grey;
+}
+
+.caja_de_redes_sociales{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin: 10px;  
+}
+
+.redes_sociales_ubicacion{
+    display: flex;
+    align-items: center;
+    color: grey;
+    margin: 10px;
+   justify-content: center;
+}
+
+.redes_sociales_ubicacion{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.caja_de_redes_sociales > hr{
+    width: 300px;
+    margin-top: 10px;
+    
+}
+
+.copyright{
+    margin-top: 25px;
+    color: gray;
+}
+
+.copyright > p{
+    margin-left: 25%;
+}
+
+.copyright > a{
+    margin-left: 40px;
+    color: grey;
+}
+
+.logo_footer{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+
+/*-------------------------------------------- INDEX --------------------------------------------*/
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    font-size: 35px;
+    color: white;
+}
+
+.descripcion{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: #ff8000;
+    box-shadow: 5px 5px  20px black;
+    font-family: sans-serif;
+}
+
+.construccion_barbacoa{
+    display: flex;
+    justify-content: center;  
+    margin-right: 50px;
+    margin-bottom: 0px;  
+}
+
+.barbacoa_foto_index{
+    height: 250px;
+    width: 275px;    
+    margin: 30px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 10px black;
+    border: 1px solid black;
+}
+
+.construccion_barbacoa > p{
+    font-size: 30px;
+    margin: 120px 0px 130px 60px;
+    background-color: #ff8000;
+    padding: 10px;
+    border-radius:0px 10px 10px 0px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.construccion_reja{
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+}
+
+.reja{
+    height: 250px;
+    width: 275px;
+    margin: 10px 30px 40px;
+    box-shadow: 1px 1px 10px black; 
+    border: 1px solid black;   
+}
+
+.construccion_reja > p{
+    font-size: 30px;
+    margin: 120px 60px 130px 0px;
+    background-color: #ff8000;
+    padding: 10px ;
+    border-radius:10px 0px 0px 10px;
+    box-shadow: 1px 1px 10px black;
+}
+
+hr{
+    margin: auto;    
+    width: 1200px ;    
+}
+
+.caja_fotos{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff8000;
+    margin: 0px 0px ;    
+    box-shadow: 5px 5px  20px black;
+    margin-bottom: 90px;
+}
+
+.caja_fotos > p{
+    margin-top: 90px;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+.foto_presentacion{
+    height: 400px;
+    width: 290px;
+    border-radius: 10px;
+    margin: 50px 90px;   
+    box-shadow: 0.5px 0.5px 10px black;
+}
+
+
+/* ------------------------------------------GALERIA------------------------------------------*/
+
+
+.titulos_fotos_derecha{
+    background-color: #ff8000;
+    padding: 10px;
+    border-radius:10px 0px 0px 10px;
+    font-size: 25px;
+    margin: 80px 0px 40px 300px;
+    box-shadow: 5px 5px  20px black;
+    
+}
+
+.titulos_fotos_izquierda{
+    background-color: #ff8000;
+    padding: 10px;
+    border-radius:0px 10px 10px 0px;
+    font-size: 25px;
+    margin: 80px 300px 40px 0px;
+    direction: rtl;
+    box-shadow: 5px 5px  20px black;
+}
+
+.titulos_fotos_izquierda > p{
+    margin-right: 40px;
+}
+
+.titulos_fotos_derecha > p{
+    margin-left: 40px;
+}
+
+
+.fotos_galeria{
+    width: 240px;
+    height: 270px;
+    margin: 0px 30px 0px 30px;
+    box-shadow: 5px 5px  20px black;
+    border-radius: 10px;
+}
+
+.imagenes_derecha{
+    direction: rtl;
+}
+
+.reparacion_reja{
+    margin-bottom: 40px;
+}
+
+
+/* ------------------------------------------PRESUPUESTO-------------------------------------------*/
+
+
+form{
+    font-size: 22px;
+    background-color: #ff8000;
+    border: 1px solid black;
+    width: 600px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 50px;
+    box-shadow: 5px 5px  20px black;
+    border-radius: 10px;
+}
+
+.input_form{
+    float: right;
+    width: 584px;
+    margin: 4px;
+}
+
+textarea{
+    margin: 4px;
+}
+
+.input_submit{
+    float: right;
+}
+
+
+/* ------------------------------------------CONTACTO-------------------------------------------*/
+
+.contenedor_caja_contacto{
+    margin-bottom: 130px;
+    margin-top: 100px;
+}
+
+.caja_contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja_contacto > div > h6{
+    background-color: #ff8000;
+    color: black;
+    font-size: 23px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.caja_contacto > div > div > p{
+    color: white;
+    margin-top: 30px;
+}
+
+.caja_contacto > div{
+    text-align: center; 
+    
+}
+
+.foto_mapa{
+    height: 500px;
+    margin-left: 250px;
+    box-shadow: 5px 5px  20px black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.foto_ubicacion{
+    height: 40px;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+}
+
+.ubicacion > p{
+    background-color: #ff8000;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 5px 5px  20px black;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
